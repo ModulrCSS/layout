@@ -1,0 +1,829 @@
+/*
+  @about Modulr.css
+  -----------------------------------------
+  @desc: Pure Css Layout Module (flex grid)
+  @author: Alan Museljic
+  @git: https://www.github/com/uloga/modulr.css
+  @source: http://www.getmodulr.com/css/layout
+  ------------------------------------------------
+  @uses: modulr/layout/*
+  @docs: true 
+\-------------------------------------------------*/
+
+/*
+  @element: any .wrapper748
+  @desc: content wrapper
+*/
+
+[mod-wrapper~="748"]{
+  width: 748px;
+}
+
+/*
+  @element: any .wrapper960
+  @desc: content wrapper
+*/
+
+[mod-wrapper~="960"]{
+  width: 960px;
+}
+
+/*
+  @element: any .wrapper1280
+  @desc: content wrapper
+*/
+
+[mod-wrapper~="1280"]{
+  width: 1280px;
+}
+
+/*
+  @element: any .wrapper1480
+  @desc: content wrapper
+*/
+
+[mod-wrapper~="1480"]{
+  width: 1480px;
+}
+
+[mod-center],
+[mod-col~="center"],
+[mod-row~="center"],
+[mod-wrapper~="center"]{
+  margin: 0 auto;
+}
+
+/* 
+  ---- GRID SYSTEM  ---- 
+*/
+
+
+/*
+  @element: any .row
+  @desc: default grid row
+*/
+
+[mod-row]{
+  width: 100%;
+}
+
+/*
+  @element: any .row.flex
+  @desc: flex grid row
+*/
+
+[mod-row~="flex"]{
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+[mod-row~="nowrap"]{
+  flex-wrap: nowrap;
+}
+[mod-row~="flex"] > [mod-col]{
+  float: none;
+}
+[mod-row~="flex"] > [mod-col] > div{
+  width: 100%;
+}
+
+/*
+  @element: false
+  @desc: flex grid column
+*/
+
+[mod-row~="flex"] [mod-col]{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*
+  @element: false
+  @desc: flex zoom
+*/
+
+[mod-row~="flex-1"] [mod-col]{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+[mod-row~="flex-2"] [mod-col]{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/*
+  @element: false
+  @desc: column direction
+*/
+
+[mod-row~="flex-column"]{
+  -webkit-flex-direction: column; 
+  flex-direction: column; 
+}
+
+/*
+  @element: false
+  @desc: reverse grid
+*/
+
+[mod-row~="flex-reverse"]{
+  -webkit-flex-direction: row-reverse; 
+  flex-direction: row-reverse;
+}
+
+/*
+  @element: false
+  @desc: reverse column
+*/
+
+[mod-row~="flex-column-reverse"]{
+  -webkit-flex-direction: column-reverse; 
+  flex-direction: column-reverse; 
+}
+
+/*
+  @element: false
+  @desc: flex align top
+*/
+
+[mod-row~="flex-top"]{
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+/*
+  @element: false
+  @desc: flex align bottom
+*/
+
+[mod-row~="flex-bottom"]{
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+/*
+  @element: false
+  @desc: flex align middle
+*/
+
+[mod-row~="flex-middle"]{
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/*
+  @element: false
+  @desc: flex align baseline
+*/
+
+[mod-row~="flex-baseline"]{
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+
+/*
+  @element: false
+  @desc: flex align stretch
+*/
+
+[mod-row~="flex-stretch"]{
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+
+/*
+  @element: false
+  @desc: flex align stretch
+*/
+
+[mod-row~="flex-initial"]{
+  -webkit-box-align: initial;
+  -webkit-align-items: initial;
+  -ms-flex-align: initial;
+  align-items: initial;
+}
+
+
+/*
+  @element: false
+  @desc: flex justify start
+*/
+
+[mod-row~="flex-start"]{
+  -webkit-justify-content: flex-start; 
+  justify-content: flex-start; 
+}
+
+
+/*
+  @element: false
+  @desc: flex justify center
+*/
+
+[mod-row~="flex-center"]{
+  -webkit-justify-content: center; 
+  justify-content: center; 
+}
+
+/*
+  @element: false
+  @desc: flex justify end
+*/
+
+[mod-row~="flex-end"]{
+  -webkit-justify-content: flex-end; 
+  justify-content: flex-end; 
+}
+
+/*
+  @element: false
+  @desc: flex space between
+*/
+
+[mod-row~="flex-space-between"]{
+  -webkit-justify-content: space-between; 
+  justify-content: space-between; 
+}
+
+/*
+  @element: false
+  @desc: flex space between
+*/
+
+[mod-row~="flex-space-around"]{
+  -webkit-justify-content: space-around; 
+  justify-content: space-around; 
+}
+
+/* 
+  @element: false
+  @desc: column reset
+*/
+
+[mod-col~="12"],
+[mod-col~="11"],
+[mod-col~="10"],
+[mod-col~="9"],
+[mod-col~="8"],
+[mod-col~="7"],
+[mod-col~="6"],
+[mod-col~="5"],
+[mod-col~="4"],
+[mod-col~="3"],
+[mod-col~="2"],
+[mod-col~="1"]{
+  float: left;
+  position: relative;
+  display: block;
+  min-height: 1px;
+}
+
+/* 
+  @element: div .col-12
+  @desc: col-12 column
+*/
+
+[mod-col~="12"]{
+  width: 100%;
+}
+
+/* 
+  @element: div .col-11
+  @desc: col-11 column
+*/
+
+[mod-col~="11"]{
+  width: 91.6666666%;
+}
+
+/* 
+  @element: div .col-10
+  @desc: col-10 column
+*/
+
+[mod-col~="10"] {
+  width: 83.33333333333333%;
+}
+
+/* 
+  @element: div .col-9
+  @desc: col-9 column
+*/
+
+[mod-col~="9"] {
+  width: 75%;
+}
+
+/* 
+  @element: div .col-8
+  @desc: col-8 column
+*/
+
+[mod-col~="8"]{
+  width: 66.66666666666667%;
+}
+
+/* 
+  @element: div .col-7
+  @desc: col-7 column
+*/
+
+[mod-col~="7"]{
+  width: 58.33333333333333%;
+}
+
+/* 
+  @element: div .col-6
+  @desc: col-6 column
+*/
+
+[mod-col~="6"]{
+  width: 50%;
+}
+
+/* 
+  @element: div .col-5
+  @desc: col-5 column
+*/
+
+[mod-col~="5"]{
+  width: 41.66666666666667%;
+}
+
+/* 
+  @element: div .col-4
+  @desc: col-4 column
+*/
+
+[mod-col~="4"]{
+  width: 33.33333333333333%;
+}
+
+/* 
+  @element: div .col-3
+  @desc: col-3 column
+*/
+
+[mod-col~="3"]{
+  width: 25%;
+}
+
+/* 
+  @element: div .col-2
+  @desc: col-2 column
+*/
+
+[mod-col~="2"]{
+  width: 16.66666666666667%;
+}
+
+/* 
+  @element: div .col-1
+  @desc: col-1 column
+*/
+
+[mod-col~="1"]{
+  width: 8.33333333%;
+}
+
+
+/* 
+  ---- COLUMN GUTTERS ----  
+*/
+
+
+/* 
+  @property: padding
+  @desc: parent-child gutters
+*/
+
+[mod-row~="gutter-5"],
+[mod-row~="gutter-10"],
+[mod-row~="gutter-15"], 
+[mod-row~="gutter-20"], 
+[mod-row~="gutter-25"], 
+[mod-row~="gutter-30"], 
+[mod-row~="gutter-35"], 
+[mod-row~="gutter-40"], 
+[mod-row~="h-gutter-5"],
+[mod-row~="h-gutter-10"],
+[mod-row~="h-gutter-15"], 
+[mod-row~="h-gutter-20"], 
+[mod-row~="h-gutter-25"], 
+[mod-row~="h-gutter-30"], 
+[mod-row~="h-gutter-35"], 
+[mod-row~="h-gutter-40"]{
+  width: auto;
+}
+[mod-row~="gutter-5"] > [mod-col]{
+  padding-top: 5px;
+  padding-left: 5px;
+}
+[mod-row~="gutter-10"] > [mod-col]{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+[mod-row~="gutter-15"] > [mod-col]{
+  padding-top: 15px;
+  padding-left: 15px;
+}
+[mod-row~="gutter-20"] > [mod-col]{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+[mod-row~="gutter-25"] > [mod-col]{
+  padding-top: 25px;
+  padding-left: 25px;
+}
+[mod-row~="gutter-30"] > [mod-col]{
+  padding-top: 30px;
+  padding-left: 30px;
+}
+[mod-row~="gutter-35"] > [mod-col]{
+  padding-top: 35px;
+  padding-left: 35px;
+}
+[mod-row~="gutter-40"] > [mod-col]{
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+
+/* 
+  @property: margin
+  @desc: parent-child flex.nowrap gutters
+*/
+
+[mod-row~="nowrap"][mod-row~="gutter-5"] > [mod-col]{
+  padding: 0;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+[mod-row~="nowrap"][mod-row~="gutter-10"]  > [mod-col]{
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+[mod-row~="nowrap"][mod-row~="gutter-15"]  > [mod-col]{
+  padding: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+[mod-row~="nowrap"][mod-row~="gutter-20"]  > [mod-col]{
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+[mod-row~="nowrap"][mod-row~="gutter-25"]  > [mod-col]{
+  padding: 0;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+[mod-row~="nowrap"][mod-row~="gutter-30"]  > [mod-col]{
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+[mod-row~="nowrap"][mod-row~="gutter-35"]  > [mod-col]{
+  padding: 0;
+  margin-top: 35px;
+  margin-left: 35px;
+}
+[mod-row~="nowrap"][mod-row~="gutter-40"]  > [mod-col]{
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+
+/*
+  @property: padding
+  @desc: horizontal gutter
+*/
+
+[mod-row~="h-gutter-5"] > [mod-col]{
+  padding-left: 5px;
+}
+[mod-row~="h-gutter-10"] > [mod-col]{
+  padding-left: 10px;
+}
+[mod-row~="h-gutter-15"] > [mod-col]{
+  padding-left: 15px;
+}
+[mod-row~="h-gutter-20"] > [mod-col]{
+  padding-left: 20px;
+}
+[mod-row~="h-gutter-25"] > [mod-col]{
+  padding-left: 25px;
+}
+[mod-row~="h-gutter-30"] > [mod-col]{
+  padding-left: 30px;
+}
+[mod-row~="h-gutter-35"] > [mod-col]{
+  padding-left: 35px;
+}
+[mod-row~="h-gutter-40"] > [mod-col]{
+  padding-left: 40px;
+}
+
+
+/*
+  @property: padding
+  @desc: vertical gutter
+*/
+
+[mod-row~="v-gutter-5"] > [mod-col]{
+  padding-bottom: 5px;
+}
+[mod-row~="v-gutter-10"] > [mod-col]{
+  padding-bottom: 10px;
+}
+[mod-row~="v-gutter-15"] > [mod-col]{
+  padding-bottom: 15px;
+}
+[mod-row~="v-gutter-20"] > [mod-col]{
+  padding-bottom: 20px;
+}
+[mod-row~="v-gutter-25"] > [mod-col]{
+  padding-bottom: 25px;
+}
+[mod-row~="v-gutter-30"] > [mod-col]{
+  padding-bottom: 30px;
+}
+[mod-row~="v-gutter-35"] > [mod-col]{
+  padding-bottom: 35px;
+}
+[mod-row~="v-gutter-40"] > [mod-col]{
+  padding-bottom: 40px;
+}
+
+
+/*
+  @property: margin
+  @desc: horizontal flex.nowrap gutter
+*/
+
+[mod-row~="nowrap"][mod-row~="h-gutter-5"]  > [mod-col]{
+  padding: 0;
+  margin-left: 5px;
+}
+[mod-row~="nowrap"][mod-row~="h-gutter-10"]  > [mod-col]{
+  padding: 0;
+  margin-left: 10px;
+}
+[mod-row~="nowrap"][mod-row~="h-gutter-15"]  > [mod-col]{
+  padding: 0;
+  margin-left: 15px;
+}
+[mod-row~="nowrap"][mod-row~="h-gutter-20"]  > [mod-col]{
+  padding: 0;
+  margin-left: 20px;
+}
+[mod-row~="nowrap"][mod-row~="h-gutter-25"]  > [mod-col]{
+  padding: 0;
+  margin-left: 25px;
+}
+[mod-row~="nowrap"][mod-row~="h-gutter-30"]  > [mod-col]{
+  padding: 0;
+  margin-left: 30px;
+}
+[mod-row~="nowrap"][mod-row~="h-gutter-35"]  > [mod-col]{
+  padding: 0;
+  margin-left: 35px;
+}
+[mod-row~="nowrap"][mod-row~="h-gutter-40"]  > [mod-col]{
+  padding: 0;
+  margin-left: 40px;
+}
+
+
+/*
+  @property: margin
+  @desc: vertical flex.nowrap gutter
+*/
+
+[mod-row~="nowrap"][mod-row~="v-gutter-5"]  > [mod-col] {
+  padding: 0;
+  margin-bottom: 5px;
+}
+[mod-row~="nowrap"][mod-row~="v-gutter-10"]  > [mod-col] {
+  padding: 0;
+  margin-bottom: 10px;
+}
+[mod-row~="nowrap"][mod-row~="v-gutter-15"]  > [mod-col] {
+  padding: 0;
+  margin-bottom: 15px;
+}
+[mod-row~="nowrap"][mod-row~="v-gutter-20"]  > [mod-col] {
+  padding: 0;
+  margin-bottom: 20px;
+}
+[mod-row~="nowrap"][mod-row~="v-gutter-25"]  > [mod-col] {
+  padding: 0;
+  margin-bottom: 25px;
+}
+[mod-row~="nowrap"][mod-row~="v-gutter-30"]  > [mod-col] {
+  padding: 0;
+  margin-bottom: 30px;
+}
+[mod-row~="nowrap"][mod-row~="v-gutter-35"]  > [mod-col] {
+  padding: 0;
+  margin-bottom: 35px;
+}
+[mod-row~="nowrap"][mod-row~="v-gutter-40"]  > [mod-col] {
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+
+/* fixers */
+
+[mod-row~="gutter-5"],
+[mod-row~="h-gutter-5"]{
+  margin-left: -5px;
+}
+[mod-row~="gutter-10"],
+[mod-row~="h-gutter-10"]{
+  margin-left: -10px;
+}
+[mod-row~="gutter-15"],
+[mod-row~="h-gutter-15"]{
+  margin-left: -15px;
+}
+[mod-row~="gutter-20"],
+[mod-row~="h-gutter-20"]{
+  margin-left: -20px;
+}
+[mod-row~="h-gutter-25"],
+[mod-row~="gutter-25"]{
+  margin-left: -25px;
+}
+[mod-row~="gutter-30"],
+[mod-row~="h-gutter-30"]{
+  margin-left: -30px;
+}
+[mod-row~="gutter-35"],
+[mod-row~="h-gutter-35"]{
+  margin-left: -35px;
+}
+[mod-row~="gutter-40"],
+[mod-row~="h-gutter-40"]{
+  margin-left: -40px;
+}
+
+/* 
+  ---- GRID OFFSETS  ---- 
+*/
+
+[mod-col~="pull-right-12"],
+[mod-col~="push-left-12"]{
+  margin-left: 100%;
+}
+[mod-col~="pull-right-11"],
+[mod-col~="push-left-11"]{
+  margin-left: 91.6666666%;
+}
+[mod-col~="pull-right-10"],
+[mod-col~="push-left-10"]{
+  margin-left: 83.33333333333333%;
+}
+[mod-col~="pull-right-9"],
+[mod-col~="push-left-9"]{
+  margin-left: 75%;
+}
+[mod-col~="pull-right-8"],
+[mod-col~="push-left-8"]{
+  margin-left: 66.66666666666667%;
+}
+[mod-col~="pull-right-7"],
+[mod-col~="push-left-7"]{
+  margin-left: 58.33333333333333%;
+}
+[mod-col~="pull-right-6"],
+[mod-col~="push-left-6"]{
+  margin-left: 50%;
+}
+[mod-col~="pull-right-5"],
+[mod-col~="push-left-5"]{
+  margin-left: 41.66666666666667%;
+}
+[mod-col~="pull-right-4"],
+[mod-col~="push-left-4"]{
+  margin-left: 33.33333333333333%;
+}
+[mod-col~="pull-right-3"],
+[mod-col~="push-left-3"]{
+  margin-left: 25%;
+}
+[mod-col~="pull-right-2"],
+[mod-col~="push-left-2"]{
+  margin-left: 16.66666666666667%;
+}
+[mod-col~="pull-right-1"],
+[mod-col~="push-left-1"]{
+  margin-left: 8.33333333%;
+}
+
+/* __ pull right columns __ */
+
+
+[mod-col~="pull-left-12"],
+[mod-col~="push-right-12"]{
+  margin-right: 100%;
+}
+[mod-col~="pull-left-11"],
+[mod-col~="push-right-11"]{
+  margin-right: 91.6666666%;
+}
+[mod-col~="pull-left-10"],
+[mod-col~="push-right-10"]{
+  margin-right: 83.33333333333333%;
+}
+[mod-col~="pull-left-9"],
+[mod-col~="push-right-9"]{
+  margin-right: 75%;
+}
+[mod-col~="pull-left-8"],
+[mod-col~="push-right-8"]{
+  margin-right: 66.66666666666667%;
+}
+[mod-col~="pull-left-7"],
+[mod-col~="push-right-7"]{
+  margin-right: 58.33333333333333%;
+}
+[mod-col~="pull-left-6"],
+[mod-col~="push-right-6"]{
+  margin-right: 50%;
+}
+[mod-col~="pull-left-5"],
+[mod-col~="push-right-5"]{
+  margin-right: 41.66666666666667%;
+}
+[mod-col~="pull-left-4"],
+[mod-col~="push-right-4"]{
+  margin-right: 33.33333333333333%;
+}
+[mod-col~="pull-left-3"],
+[mod-col~="push-right-3"]{
+  margin-right: 25%;
+}
+[mod-col~="pull-left-2"],
+[mod-col~="push-right-2"]{
+  margin-right: 16.66666666666667%;
+}
+[mod-col~="pull-left-1"],
+[mod-col~="push-right-1"]{
+  margin-right: 8.33333333%;
+}
+
+/* 
+  ---- CLEARFIX  ---- 
+*/
+
+/*
+  @generate: false
+  @element: false
+  @desc: fix floats
+*/
+
+[mod-row]:before,
+[mod-row]:after,
+[mod-wrapper]:before,
+[mod-wrapper]:after{
+  content: "";    
+  display: block; 
+  width: 0;
+  height: 0;    
+  overflow: hidden; 
+}
+[mod-row]:after,
+[mod-wrapper]:after{
+  clear: both; 
+}
+[mod-row],
+[mod-wrapper]{
+  zoom: 1; 
+}
