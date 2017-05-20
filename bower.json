@@ -1,0 +1,28 @@
+{
+  "name": "modulr-layout",
+  "homepage": "https://github.com/ModulrCSS/layout",
+  "authors": [
+    "uloga <wpnemesis@gmail.com>"
+  ],
+  "description": "Modulr.css layout component (flex grid)",
+  "main": "",
+  "keywords": [
+    "flex",
+    "grid",
+    "layout",
+    "row",
+    "grid",
+    "component",
+    "html5",
+    "pure",
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
