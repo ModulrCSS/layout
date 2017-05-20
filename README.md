@@ -1,1 +1,1 @@
-# Modulr Css - Layout Component (flex grid)
+# Modulr.css - Pure CSS Layout Component (flex grid)
