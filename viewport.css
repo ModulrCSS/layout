@@ -314,7 +314,17 @@
   [mod-if-screen-xl~="remove-top-gutter"] > [mod-col]{
     padding-top: 0;
   }
-  
+
+
+  /* -- remove pushers and pullers -- */
+
+  [mod-if-screen-xl~="remove-pull-right"],
+  [mod-if-screen-xl~="remove-push-left"],
+  [mod-if-screen-xl~="remove-pull-left"],
+  [mod-if-screen-xl~="remove-push-right"]{
+    margin-left: 0;
+  }
+
 }
 
 /* large size */
@@ -632,6 +642,17 @@
   [mod-if-screen-lg~="remove-top-gutter"][mod-col],
   [mod-if-screen-lg~="remove-top-gutter"] > [mod-col]{
     padding-top: 0;
+  }
+
+  /* -- remove pushers and pullers -- */
+
+  [mod-if-screen-lg~="remove-pull-right"],
+  [mod-if-screen-lg~="remove-push-left"]{
+    margin-left: 0;
+  }
+  [mod-if-screen-lg~="remove-pull-left"],
+  [mod-if-screen-lg~="remove-push-right"]{
+    margin-right: 0;
   }
 
 }
@@ -965,6 +986,17 @@
     padding-top: 0;
   }
 
+  /* -- remove pushers and pullers -- */
+
+  [mod-if-screen-md~="remove-pull-right"],
+  [mod-if-screen-md~="remove-push-left"]{
+    margin-left: 0;
+  }
+  [mod-if-screen-md~="remove-pull-left"],
+  [mod-if-screen-md~="remove-push-right"]{
+    margin-right: 0;
+  }
+
 
 }
 
@@ -1287,6 +1319,17 @@
   [mod-if-screen-sm~="remove-top-gutter"][mod-col],
   [mod-if-screen-sm~="remove-top-gutter"] > [mod-col]{
     padding-top: 0;
+  }
+
+  /* -- remove pushers and pullers -- */
+
+  [mod-if-screen-sm~="remove-pull-right"],
+  [mod-if-screen-sm~="remove-push-left"]{
+    margin-left: 0;
+  }
+  [mod-if-screen-sm~="remove-pull-left"],
+  [mod-if-screen-sm~="remove-push-right"]{
+    margin-right: 0;
   }
 
 }
@@ -1615,6 +1658,18 @@
   [mod-if-screen-xs~="remove-top-gutter"] > [mod-col]{
     padding-top: 0;
   }
+
+  /* -- remove pushers and pullers -- */
+
+  [mod-if-screen-xs~="remove-pull-right"],
+  [mod-if-screen-xs~="remove-push-left"]{
+    margin-left: 0;
+  }
+  [mod-if-screen-xs~="remove-pull-left"],
+  [mod-if-screen-xs~="remove-push-right"]{
+    margin-right: 0;
+  }
+
 
 }
 
@@ -1946,6 +2001,17 @@
   [mod-if-screen-xxs~="remove-top-gutter"][mod-col],
   [mod-if-screen-xxs~="remove-top-gutter"] > [mod-col]{
     padding-top: 0;
+  }
+
+   /* -- remove pushers and pullers -- */
+
+  [mod-if-screen-xxs~="remove-pull-right"],
+  [mod-if-screen-xxs~="remove-push-left"]{
+    margin-left: 0;
+  }
+  [mod-if-screen-xxs~="remove-pull-left"],
+  [mod-if-screen-xxs~="remove-push-right"]{
+    margin-right: 0;
   }
 
 }
