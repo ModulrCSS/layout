@@ -319,10 +319,12 @@
   /* -- remove pushers and pullers -- */
 
   [mod-if-screen-xl~="remove-pull-right"],
-  [mod-if-screen-xl~="remove-push-left"],
+  [mod-if-screen-xl~="remove-push-left"]{
+    margin-left: 0;
+  }
   [mod-if-screen-xl~="remove-pull-left"],
   [mod-if-screen-xl~="remove-push-right"]{
-    margin-left: 0;
+    margin-right: 0;
   }
 
 }
