@@ -4,7 +4,7 @@
   "authors": [
     "uloga <wpnemesis@gmail.com>"
   ],
-  "description": "Modulr.css layout component (flex grid)",
+  "description": "Modulr.css layout component [flex grid]",
   "main": "",
   "keywords": [
     "flex",
@@ -15,7 +15,8 @@
     "component",
     "html5",
     "pure",
-    "css"
+    "css",
+    "css3"
   ],
   "license": "MIT",
   "ignore": [
